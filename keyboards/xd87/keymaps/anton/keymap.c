@@ -24,6 +24,7 @@ enum custom_keycodes {
   TABLE,
   SHRUG,
   LENNY,
+  SHRUG2,
 };
 
 
@@ -38,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT_tkl_iso(\
       _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,             _______, _______, _______, \
-      _______,TABLE  ,SHRUG  ,LENNY  ,_______,_______,_______,_______,_______,_______,_______,_______,_______, _______,    KC_VOLU, KC_MPLY, KC_MNXT, \
+      _______,TABLE  ,LENNY  ,SHRUG  ,SHRUG2 ,_______,_______,_______,_______,_______,_______,_______,_______, _______,    KC_VOLU, KC_MPLY, KC_MNXT, \
       _______,KC_BTN1,KC_MS_U,KC_BTN2,_______,_______,_______,_______,_______,_______,_______,_______,_______,             KC_VOLD, KC_MSTP, KC_MPRV, \
       KC_CAPS,KC_MS_L,KC_MS_D,KC_MS_R,_______,_______,_______,_______,_______,_______,_______,_______,_______, _______, \
       _______,_______,_______,_______,COMPILE,_______,KC_WHOM,_______,KC_MAIL,_______,_______,_______,         _______,             BL_TOGG, \
@@ -76,7 +77,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case LENNY:
       if(record->event.pressed) {
-        send_unicode_hex_string("000A 0028 0020 0361 00B0 0020 035C 0296 0020 0361 00B0 0029 000A");
+        send_unicode_hex_string("0028 0020 0361 00B0 0020 035C 0296 0020 0361 00B0 0029 000A");
       } else {
 
       }
@@ -84,7 +85,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case SHRUG:
       if(record->event.pressed) {
-        send_unicode_hex_string("000A 00AF 005C 005F 0028 30C4 0029 005F 002F 00AF 000A");
+        send_unicode_hex_string("00AF 005C 005F 0028 30C4 0029 005F 002F 00AF 000A");
+      } else {
+
+      }
+      break;
+
+    case SHRUG2:
+      if(record->event.pressed) {
+        send_unicode_hex_string("00AF 005C 005C 005C 005F 0028 30C4 0029 005C 005F 002F 00AF 000A");
       } else {
 
       }
