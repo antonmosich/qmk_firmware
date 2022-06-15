@@ -69,7 +69,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case TABLE:
       if(record->event.pressed) {
-        send_unicode_hex_string("0028 FF89 0CA5 76CA 0CA5 FF09 FF89 5F61 253B 2501 253B");
+//        send_unicode_hex_string("0028 FF89 0CA5 76CA 0CA5 FF09 FF89 5F61 253B 2501 253B");
+        send_unicode_string("(ﾉಥ益ಥ）ﾉ彡┻━┻");
       } else {
 
       }
@@ -77,7 +78,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case LENNY:
       if(record->event.pressed) {
-        send_unicode_hex_string("0028 0020 0361 00B0 0020 035C 0296 0020 0361 00B0 0029 000A");
+//        send_unicode_hex_string("0028 0020 0361 00B0 0020 035C 0296 0020 0361 00B0 0029 000A");
+        send_unicode_string("( ͡° ͜ʖ ͡°)");
       } else {
 
       }
@@ -85,7 +87,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case SHRUG:
       if(record->event.pressed) {
-        send_unicode_hex_string("00AF 005C 005F 0028 30C4 0029 005F 002F 00AF 000A");
+//        send_unicode_hex_string("00AF 005C 005F 0028 30C4 0029 005F 002F 00AF 000A");
+        send_unicode_string("¯\\(ツ)/¯");
       } else {
 
       }
@@ -93,7 +96,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case SHRUG2:
       if(record->event.pressed) {
-        send_unicode_hex_string("00AF 005C 005C 005C 005F 0028 30C4 0029 005C 005F 002F 00AF 000A");
+//        send_unicode_hex_string("00AF 005C 005C 005C 005F 0028 30C4 0029 005C 005F 002F 00AF 000A");
+        send_unicode_string("¯\\\\(ツ)/¯");
       } else {
 
       }
