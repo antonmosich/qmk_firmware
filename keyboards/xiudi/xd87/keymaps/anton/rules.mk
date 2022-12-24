@@ -1,0 +1,10 @@
+BOOTMAGIC_ENABLE = yes      # Virtual DIP switch configuration
+MOUSEKEY_ENABLE = yes        # Mouse keys
+EXTRAKEY_ENABLE = yes       # Audio control and System control
+CONSOLE_ENABLE = no        # Console for debug
+COMMAND_ENABLE = no        # Commands for debug and configuration
+NKRO_ENABLE = yes            # USB Nkey Rollover
+BACKLIGHT_ENABLE = yes      # Enable keyboard backlight functionality on B7 by default
+UNICODE_ENABLE = yes         # Unicode
+UNICODEMAP_ENABLE = no		# Unicode Method 2
+UCIS_ENABLE = no			# Unicode Method 3

@@ -24,8 +24,14 @@
         "editor.trimAutoWhitespace": false,
         "files.trimTrailingWhitespace": false
     },
+    "python.pythonPath": "A:\\Programme\\Anaconda\\python.exe",
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+      "/c",
+      "set MSYSTEM=MINGW64&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& set CHERE_INVOKING=enabled_from_arguments&& A:/Programme/Msys2/usr/bin/bash.exe --login",
+    ],
     "python.formatting.provider": "yapf",
     "[json]": {
 	    "editor.formatOnSave": false
-    }
+    },
 }
